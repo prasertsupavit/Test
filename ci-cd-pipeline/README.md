@@ -21,7 +21,7 @@ At least:
 3. You must use [Docker Hub](https://hub.docker.com) or any other *Docker* container registres like ACR, ECR etc. to save the container images.
 4. The pipeline should be triggered when a *Pull request* is merged into `main` or `master` branches of your repository. Direct commits into `main` or `master` are not allowed.
 5. You must use as much configuration-as-code (CaC) as possible. Authentication secrets like usernames/passwords/tokens should be isolated from the tools you're using.
-6. (BONUS POINT) Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment.
+6. Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment and canary deployment.
 
 ## Steps
 To achieve the requirements, you should follow this procedure:
@@ -29,7 +29,7 @@ To achieve the requirements, you should follow this procedure:
 2. Set up the pipeline
 3. Modify the `index.html` file, changing the content inside `<main></main>` tags for something else i.e. `Hello! I'm [YOUR_NAME]`.
 4. Build the docker image and push it to a container registry
-5. (BONUS POINT) Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment.
+5. Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment and canary deployment.
 
 
 ## Deliverables
