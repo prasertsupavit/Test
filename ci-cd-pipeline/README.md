@@ -22,7 +22,7 @@ At least:
 4. You must apply the security principle to this pipeline, it's not necessary to apply SCA, DAST, SAST or Runtime Security but be prepared to explain the integration of those tools.
 5. The pipeline should be triggered when a *Pull request* is merged into `main` or `master` branches of your repository. Direct commits into `main` or `master` are not allowed.
 6. You must use as much configuration-as-code (CaC) as possible. Authentication secrets like usernames/passwords/tokens should be isolated from the tools you're using.
-7. Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment and canary deployment.
+7. Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment or canary deployment.
 
 ## Steps
 To achieve the requirements, you should follow this procedure:
