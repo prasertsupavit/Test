@@ -37,4 +37,4 @@ To achieve the requirements, you should follow this procedure:
 ## Deliverables
 You must:
 1. Provide the **source code** you used.
-2. **Show us** how the CI/CD works with a real example.
+2. **Show us** how the CI/CD works with a real example. Please be prepared to change your source code and push to github, we expect the pipeline will be triggered once you merge the pull request.
