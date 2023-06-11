@@ -23,6 +23,7 @@ At least:
 5. The pipeline should be triggered when a *Pull request* is merged into `main` or `master` branches of your repository. Direct commits into `main` or `master` are not allowed.
 6. You must use as much configuration-as-code (CaC) as possible. Authentication secrets like usernames/passwords/tokens should be isolated from the tools you're using.
 7. Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment or canary deployment.
+8. Make sure you apply the security best practices as much as you can.
 
 ## Steps
 To achieve the requirements, you should follow this procedure:
@@ -31,10 +32,11 @@ To achieve the requirements, you should follow this procedure:
 3. Modify the `index.html` file, changing the content inside `<main></main>` tags for something else i.e. `Hello! I'm [YOUR_NAME]`.
 4. Build the docker image and push it to a container registry
 5. Deploy the image and run the app somewhere on AKS/EKS/Minikube/Your own Kubernetes cluster, if possible create the CD pipeline in Jenkins for the deployment to Kubernetes cluster and apply blue/green deployment and canary deployment.
-6. Deploying your Jenkins and related component in cloud environment will be advantage, this will show case your cloud skills.
+6. Deploying your Jenkins and related component in cloud environment such as AWS, Azure or GCP will be advantage, this will show case your cloud skills.
 
 
 ## Deliverables
 You must:
 1. Provide the **source code** you used.
 2. **Show us** how the CI/CD works with a real example. Please be prepared to change your source code and push to github, we expect the pipeline will be triggered once you merge the pull request.
+3. Be prepared to answer the questions related to this assignment such as CI/CD, Cloud and Security best practices.
