@@ -4,8 +4,8 @@
 ## Overview
 The purpose of this challenge is to know not only about your technical skills, but also:
 
-- Know how do you approach the infrastructure design and the application of security
-- Know how do you explain the solution and communication
+- How do you approach infrastructure design and the application of security?
+- How do you explain the solution and communicate it?
 
 As the position is based on the DevOps world, we ask you to set up a CI/CD pipeline. Basically, you need to set up a repository, connect it to a pipeline with some automation on it, so every time the repository is updated, a new Docker image is build, ready to use it in a deployment.
 
