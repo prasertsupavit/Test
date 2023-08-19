@@ -1,29 +1,25 @@
-name: Build Docker Image
-
+name: Build Nginx Docker Image
 on:
   push:
     branches:
-      - main  # Adjust this to your default branch
+      - main  # Change this to your default branch
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Show current directory
-      run: pwd
+      - name: Build Docker image
+        run: docker build -t my-nginx-image .
 
-    - name: List files in current directory
-      run: ls -la
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: List files in html directory
-      run: ls -la html
-
-    - name: Build Docker image
-      run: docker build -t your-docker-image-name:latest .
-
-    - name: Show Docker images
-      run: docker images
+      - name: Push Docker image to Docker Hub
+        run: docker push my-nginx-image
