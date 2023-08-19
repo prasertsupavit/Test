@@ -7,15 +7,23 @@ on:
 
 jobs:
   build:
-    runs-on: window-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+
+    - name: Show current directory
+      run: pwd
+
+    - name: List files in current directory
+      run: ls -la
+
+    - name: List files in html directory
+      run: ls -la html
 
     - name: Build Docker image
       run: docker build -t your-docker-image-name:latest .
 
     - name: Show Docker images
       run: docker images
-
